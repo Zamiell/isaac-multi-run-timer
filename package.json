@@ -1,6 +1,6 @@
 {
   "name": "isaac-multi-run-timer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A mod for The Binding of Isaac: Repentance.",
   "keywords": [
     "isaac",
@@ -21,11 +21,11 @@
   },
   "dependencies": {
     "isaac-typescript-definitions": "43.0.8",
-    "isaacscript-common": "87.10.1"
+    "isaacscript-common": "87.10.2"
   },
   "devDependencies": {
     "complete-node": "18.0.0",
-    "isaacscript": "6.0.13",
+    "isaacscript": "6.0.14",
     "isaacscript-lint": "8.1.0",
     "typescript": "6.0.2",
     "typescript-to-lua": "1.37.1"
