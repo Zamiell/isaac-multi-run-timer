@@ -13,7 +13,7 @@
   "type": "module",
   "scripts": {
     "build": "tstl",
-    "lint": "tsx ./scripts/lint.ts",
+    "lint": "bun run ./scripts/lint.ts",
     "nuke": "isaacscript nuke",
     "publish": "isaacscript publish",
     "start": "isaacscript monitor",
