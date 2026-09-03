@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <?xml-model href="https://wofsauge.github.io/isaac-xml-validator/xsd/metadata.xsd" ?>
 <metadata>
-  <name>isaac-multi-run-timer</name>
+  <name>Multi-Run Timer</name>
   <directory>isaac-multi-run-timer</directory>
-  <description>isaac-multi-run-timer is a currently a work in progress.</description>
+  <description>Tracks the time spent in-game.</description>
   <version>1.0</version>
   <visibility />
 </metadata>

@@ -12,12 +12,12 @@
   "license": "GPL-3.0",
   "type": "module",
   "scripts": {
-    "build": "tstl",
+    "build": "bunx --bun tstl",
     "lint": "bun run ./scripts/lint.ts",
-    "nuke": "isaacscript nuke",
-    "publish": "isaacscript publish",
-    "start": "isaacscript monitor",
-    "update": "isaacscript update"
+    "nuke": "bunx --bun isaacscript nuke",
+    "publish": "bunx --bun isaacscript publish",
+    "start": "bunx --bun isaacscript monitor",
+    "update": "bunx --bun isaacscript update"
   },
   "dependencies": {
     "isaac-typescript-definitions": "43.0.8",
