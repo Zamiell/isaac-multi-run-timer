@@ -1,5 +1,9 @@
 import { ModCallback } from "isaac-typescript-definitions";
-import { ModCallbackCustom, onChallenge } from "isaacscript-common";
+import {
+  ModCallbackCustom,
+  onChallenge,
+  RENDER_FRAMES_PER_SECOND,
+} from "isaacscript-common";
 import { name } from "../package.json";
 import { ChallengeCustom } from "./enums/ChallengeCustom";
 import { mod } from "./mod";
@@ -25,6 +29,10 @@ function registerVanillaCallbacks() {
 
 function registerCustomCallbacks() {
   mod.AddCallbackCustom(
+    ModCallbackCustom.INPUT_ACTION_FILTER,
+    inputActionFilter,
+  );
+  mod.AddCallbackCustom(
     ModCallbackCustom.POST_GAME_STARTED_REORDERED,
     postGameStartedReorderedFalse,
     false,
@@ -39,7 +47,22 @@ function postRender() {
 }
 
 function drawTimerInfo() {
-  Isaac.RenderText("Sample text", 50, 30, 1, 1, 1, 255);
+  const seconds = v.persistent.totalNumRenderFrames / RENDER_FRAMES_PER_SECOND;
+  const minutes = seconds / 60;
+  const hours = seconds / 60;
+  const lines = [
+    "Multi-Run Timer",
+    "The timer is frozen when you are inside this custom challenge.",
+    "Time so far:",
+    `${v.persistent.totalNumRenderFrames} render frames = ${seconds} seconds = ${minutes} minutes = ${hours} hours`,
+    "Press F2 to reset the timer.",
+  ];
+
+  let y = 30;
+  for (const line of lines) {
+    Isaac.RenderText(line, 50, y, 1, 1, 1, 255);
+    y += 20;
+  }
 }
 
 // ModCallback.POST_GAME_END (16)
@@ -49,6 +72,12 @@ function postGameEnd() {
   }
 
   resetTimer();
+}
+
+// ModCallbackCustom.INPUT_ACTION_FILTER
+function inputActionFilter(): boolean | float | undefined {
+  // TODO
+  return undefined;
 }
 
 // ModCallbackCustom.POST_GAME_STARTED_REORDERED

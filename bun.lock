@@ -10,7 +10,7 @@
       },
       "devDependencies": {
         "complete-node": "18.0.0",
-        "isaacscript": "6.0.11",
+        "isaacscript": "6.0.13",
         "isaacscript-lint": "8.1.0",
         "typescript": "6.0.2",
         "typescript-to-lua": "1.37.1",
@@ -734,7 +734,7 @@
 
     "isaac-typescript-definitions": ["isaac-typescript-definitions@43.0.8", "", { "dependencies": { "lua-types": "2.14.1" } }, "sha512-Yj01He3kN58Vnqf/Ci4YrheGDwGPr5LxYbGNfx18x4E4kCwFV65TwKwDJbw52Bl8pdYgu23nLdrve8ju+z8oxA=="],
 
-    "isaacscript": ["isaacscript@6.0.11", "", { "dependencies": { "@commander-js/extra-typings": "15.0.0", "@zamiell/sync-directory": "6.0.5", "ajv": "8.20.0", "chalk": "6.0.0", "commander": "15.0.0", "complete-common": "2.32.0", "complete-node": "18.1.2", "figlet": "1.9.2-beta.0", "jsonc-parser": "3.3.1", "klaw-sync": "8.0.0", "moment": "2.30.1", "prompt": "1.3.0", "source-map": "0.8.0", "source-map-support": "0.5.21", "xml2js": "0.6.2", "yaml": "2.9.0" }, "peerDependencies": { "typescript": ">= 5.0.0", "typescript-to-lua": ">= 1.0.0" }, "optionalPeers": ["typescript-to-lua"], "bin": { "isaacscript": "dist/main.js" } }, "sha512-WQPvip2pzfDrgfREz42+U5PGmgJZiGjV6pcL5dqXsQMaLay+ODRMJ0INUuE+nAbc2kGnkRQ7Bbw7f7pRZfYjuA=="],
+    "isaacscript": ["isaacscript@6.0.13", "", { "dependencies": { "@commander-js/extra-typings": "15.0.0", "@zamiell/sync-directory": "6.0.5", "ajv": "8.20.0", "chalk": "6.0.0", "commander": "15.0.0", "complete-common": "2.32.0", "complete-node": "18.1.2", "figlet": "1.9.2-beta.0", "jsonc-parser": "3.3.1", "klaw-sync": "8.0.0", "moment": "2.30.1", "prompt": "1.3.0", "source-map": "0.8.0", "source-map-support": "0.5.21", "xml2js": "0.6.2", "yaml": "2.9.0" }, "peerDependencies": { "typescript": ">= 5.0.0", "typescript-to-lua": ">= 1.0.0" }, "optionalPeers": ["typescript-to-lua"], "bin": { "isaacscript": "dist/main.js" } }, "sha512-4bIKRnICwakcuh97Km0UtcnR6f2VUhXH8BOGR15zhH1uB5RTAqLdZjrxnDKPcFpf2fgAhPWa1bFW0NgHGSkuyg=="],
 
     "isaacscript-common": ["isaacscript-common@87.10.1", "", { "dependencies": { "isaac-typescript-definitions": "43.0.8" } }, "sha512-p3ydi0mezegE7Qu8/gezcop0d9pd8q3B248kA8gmy+ONTbHwdAyUUGfny5ZhihJ5PXBSK9sy5vVZ7g8lYLVl9Q=="],
 
