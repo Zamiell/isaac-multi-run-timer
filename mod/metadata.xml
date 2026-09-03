@@ -3,7 +3,13 @@
 <metadata>
   <name>Multi-Run Timer</name>
   <directory>isaac-multi-run-timer</directory>
-  <description>Tracks the time spent in-game.</description>
+  <description>
+    This mod tracks the total amount of time that passes while in-game, skipping the time that passes when in the main menu. The idea is to automatically track the time for long speedrun categories (such as Dead God%).
+
+To see the timer, enter the "Multi-Run Timer" custom challenge.
+
+See the source code for this mod on GitHub: https://github.com/Zamiell/isaac-multi-run-timer/
+  </description>
   <version>1.0</version>
   <visibility />
 </metadata>
