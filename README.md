@@ -4,4 +4,6 @@
 
 Subscribe to the mod on [the Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3795046419).
 
+To see the timer, enter the "Multi-Run Timer" custom challenge.
+
 This mod is written in [TypeScript](https://www.typescriptlang.org/) using the [IsaacScript](https://isaacscript.github.io/) framework.
